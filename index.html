@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+
+    <style>
+        .collapse{
+            display: none;
+        }
+        .background{
+            background-color: red;
+        }
+        .gallery-mobil{
+            margin-top: 100px;
+        }
+        .colors{
+            padding: 5px 15px;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .tab-content{
+            display: none;
+        }
+        .active{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="paragraph"> If You Click on Me, I Will disappear</p>
+    <p class="paragraph"> Click me away!</p>
+    <p class="paragraph"> Click me away!</p>
+
+    <button id="btn-hide">Hide Text</button>
+    <button id="btn-show">Show Text</button>
+
+    <button id="btn-toggle">Show</button>
+
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn-hide").click(function(){
+                $(".paragraph").hide(700);
+            });
+            $("#btn-show").click(function(){
+                $(".paragraph").show(700);
+            });
+            $("#btn-toggle").click(function(){
+                $(".paragraph2").slideToggle(500);
+            });
+        
+        });
+    </script>
+
+</body>
+</html>
